@@ -72,6 +72,13 @@ button {
   border: none;
   padding: 5px 20px 5px 20px;
   color: white;
+  font-size: 18px;
+}
+
+/* Button hover styling */
+button:hover{
+  background-color: #508dee;
+  transform: scale(1.05);
 }
 
 img {
@@ -177,9 +184,4 @@ img {
   color: #E5E7EB;
   text-align: center;
   padding: 15px 0px;
-}
-/* Button hover styling */
-button:hover{
-  background-color: #508dee;
-  transform: scale(1.05);
 }
