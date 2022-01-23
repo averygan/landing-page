@@ -1,7 +1,9 @@
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0em;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header styling */
@@ -9,7 +11,7 @@ body {
   background-color: #1F2937;
   display: flex;
   justify-content: space-between;
-  padding: 10px 10% 10px 10%;
+  padding: 16px 10% 10px 10%;
 }
 
 .logo {
@@ -22,16 +24,21 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 10px;
+  gap: 28px;
   font-size: 18px;
   color: #E5E7EB;
+}
+
+li:hover{
+  color: #bdc1c9;
+  font-size: 19px;
 }
 
 /* Hero banner styling */
 .hero {
   display: flex;
   background-color: #1F2937;
-  padding: 30px 10% 100px 10%;
+  padding: 30px 10% 60px 10%;
   gap: 40px;
 }
 
@@ -56,11 +63,6 @@ h1 {
   align-self: center;
 }
 
-.image {
-  background-color: grey;
-  height: 150px;
-}
-
 button {
   border-radius: 5px;
   background-color: #3882F6;
@@ -69,12 +71,17 @@ button {
   color: white;
 }
 
+img {
+  border-radius: 5%;
+}
+
 /* Info styling */ 
 
 .info-container {
   display: flex;
   max-width: 60%;
-  gap: 10px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .info {
@@ -91,26 +98,42 @@ button {
   padding: 30px 0px 15px 0px;
 }
 
+.section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
 /* Quote styling */
 .quote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E5E7EB
+  background-color: #E5E7EB;
 }
 
 .quote-text {
-  max-width: 50%;
   padding: 50px 0px 20px 0px;
   font-size: 36px;
   font-style: italic;
   font-weight: 300;
+  text-align: left;
+  width: 50%;
 }
 
 .author {
-  margin-right: -25%;
   margin-bottom: 50px;
   font-weight: 700;
+  margin-right: -20%;
 }
 
 /* CTA styling */
@@ -151,4 +174,9 @@ button {
   color: #E5E7EB;
   text-align: center;
   padding: 15px 0px;
+}
+/* Button hover styling */
+button:hover{
+  background-color: #508dee;
+  transform: scale(1.05);
 }
